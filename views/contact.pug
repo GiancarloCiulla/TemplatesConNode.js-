@@ -1,0 +1,33 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="/css/style.css")
+        title Contact
+        
+    body
+        include ./header.pug
+
+        main
+            // Breve introducción
+            section.intro
+                p Puedes ponerte en contacto conmigo completando el siguiente formulario.
+
+            // Formulario de contacto
+            section.contact-form
+                h2 Envíame un mensaje
+                form(action="/send-message" method="POST")
+                    label(for="name") Nombre
+                    input(type="text" id="name" name="name" required)
+
+                    label(for="email") Email
+                    input(type="email" id="email" name="email" required)
+
+                    label(for="message") Mensaje
+                    textarea(id="message" name="message" rows="4" required)
+
+                    button(type="submit") Enviar
+
+        include ./footer.pug

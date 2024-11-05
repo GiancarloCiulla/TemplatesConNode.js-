@@ -1,0 +1,28 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="/css/style.css")
+        title Home
+        
+    body
+        include ./header.pug
+
+        main
+            // Sección de Bienvenida
+            section.welcome
+                h1 Bienvenido a Mi Página
+                p Explora mis proyectos de desarrollo web y mi pasión por la tecnología.
+
+            // Sección de Habilidades
+            section.skills
+                h2 Habilidades
+                ul
+                    li HTML & CSS
+                    li JavaScript
+                    li Node.js y Express
+                    li Bases de datos (MongoDB, Firebase)
+
+        include ./footer.pug
