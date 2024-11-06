@@ -3,11 +3,37 @@
 }
 
 header {
+    width: 100%;
     display: flex;
-    justify-content: space-between; 
-    padding: 10px 20px; 
+    padding: 10px 0;
+    margin-bottom: 10px;
+    justify-content: center;
+
+    border-radius: 5px;
+    background-color: #99e1d9;
 }
 
+header nav {
+    display: inline-block;
+}
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 10px; /* Espacio entre enlaces */
+}
+
+header nav ul li {
+    display: inline; /* Asegura que los elementos estén en una sola línea */
+}
+
+header nav ul li a {
+    color: #f9f9f9;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+}
 main {
     display: flex;
     flex-direction: column; 
